@@ -1,0 +1,106 @@
+/* styles.css */
+
+body {
+    background-color: #e0f2e9; /* Verde clarito de fondo */
+    color: #000; /* Texto negro */
+    font-family: Arial, sans-serif;
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+}
+
+header {
+    background-color: #33cc33; /* Color de la barra de navegación */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Añade espacio alrededor de la barra de navegación */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra para la barra de navegación */
+}
+
+.logo img {
+    max-width: 100px; /* Ajusta el tamaño de tu logo */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s; /* Agrega transición de color para los enlaces */
+}
+
+nav ul li a:hover {
+    color: #000; /* Cambia el color al pasar el mouse */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra para las secciones */
+}
+
+h1 {
+    color: #33cc33; /* Color de título */
+}
+
+p {
+    color: #000; /* Texto en negro */
+    font-weight: bold; /* Más peso en el texto */
+}
+
+/* Galería de imágenes */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 250px; /* Tres imágenes por fila con espacio entre ellas */
+    margin-bottom: 10px;
+    height: 250px; /* Ajusta automáticamente la altura */
+    border: solid 2px black;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    *{max-width: 100%;}
+    .navbar {
+        align-items: center;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    nav ul {
+        display: none;
+    }
+    .gallery img {
+        width: 90px; /* Dos imágenes por fila en dispositivos móviles */
+        height: 90px;
+        margin-right: -70px;
+    }
+    section {
+        padding:10px;
+        margin: 10px;
+    }
+    section p {
+        font-size: 12px;
+        
+    }
+}
